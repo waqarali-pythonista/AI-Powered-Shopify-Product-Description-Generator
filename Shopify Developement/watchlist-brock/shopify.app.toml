@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "58669f190f82484c727a48d48b56a62e"
+name = "watchlist-brock"
+handle = "watchlist-brock"
+application_url = "https://upc-desert-tapes-appreciate.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "brockcodedev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://upc-desert-tapes-appreciate.trycloudflare.com/auth/callback",
+  "https://upc-desert-tapes-appreciate.trycloudflare.com/auth/shopify/callback",
+  "https://upc-desert-tapes-appreciate.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
